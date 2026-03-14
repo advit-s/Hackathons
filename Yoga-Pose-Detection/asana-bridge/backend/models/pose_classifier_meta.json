@@ -1,0 +1,17 @@
+{
+  "class_names": [
+    "chair",
+    "cobra",
+    "downdog",
+    "goddess",
+    "not_yoga",
+    "tree",
+    "warrior"
+  ],
+  "num_classes": 7,
+  "embedding_dim": 67,
+  "model_type": "movenet_lightning",
+  "final_train_accuracy": 0.9811075925827026,
+  "final_val_accuracy": 0.5320987701416016,
+  "epochs_trained": 16
+}

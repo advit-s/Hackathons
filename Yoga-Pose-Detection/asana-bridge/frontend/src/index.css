@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Fix for select dropdown visibility */
+select {
+  color: #111827 !important;
+  background-color: #ffffff !important;
+}
+
+select option {
+  color: #111827 !important;
+  background-color: #ffffff !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Pose skeleton styles */
+.skeleton-line {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.skeleton-user {
+  stroke: #00BFFF;
+  stroke-width: 3;
+}
+
+.skeleton-ghost {
+  stroke: rgba(0, 255, 0, 0.5);
+  stroke-width: 4;
+}
+
+.landmark-dot {
+  fill: #00BFFF;
+}
+
+.landmark-dot-ghost {
+  fill: rgba(0, 255, 0, 0.6);
+}
+
+/* Animations */
+@keyframes score-pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.score-perfect {
+  animation: score-pulse 1s ease-in-out infinite;
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Gradient backgrounds */
+.gradient-yoga {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-calm {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
